@@ -1,0 +1,156 @@
+/* Reset default browser styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #0D0D0D; /* Tricorn Black */
+    color: #fff; /* White text */
+    padding: 20px;
+}
+
+.h-screen {
+    height: 100vh;
+}
+.title {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 20px;
+    padding-top: -30px;
+}
+.py-20 {
+    padding-top: 5rem; /* Assuming 20 in Tailwind refers to 5rem padding */
+    padding-bottom: 5rem;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.layout-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive layout */
+    gap: 20px; /* Gap between cards */
+    padding: 15px; /* Padding around the grid */
+}
+
+.card {
+    background-color: #1c1c1e; /* Dark background for the cards */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Soft shadow */
+    overflow: hidden; /* Ensure the content doesn't overflow */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth transform transition */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    background-color: #333; /* Light up the background on hover */
+        box-shadow: 0 0 20px 5px rgba(83, 83, 83, 0.8);
+        transition: box-shadow 0.3s ease-in-out;
+}
+
+.card img {
+    width: 100%; /* Ensure the image takes full width */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Ensure the whole image is visible */
+}
+
+.content {
+    padding: 20px;
+    text-align: left;
+}
+
+.font-bold {
+    font-weight: bold;
+}
+
+.md-text-4xl {
+    font-size: 2rem; /* Assuming md-text-4xl maps to 2rem */
+    margin-bottom: 10px;
+}
+
+.text-xl {
+    font-size: 1.25rem; /* Assuming text-xl maps to 1.25rem */
+    margin-bottom: 10px;
+}
+
+.text-white {
+    color: #fff; /* Assuming text-white maps to #fff */
+}
+
+.text-base {
+    font-size: 1rem; /* Assuming text-base maps to 1rem */
+}
+
+.my-4 {
+    margin-top: 1rem; /* Assuming my-4 maps to 1rem */
+    margin-bottom: 1rem;
+}
+
+.max-w-lg {
+    max-width: 32rem; /* Assuming max-w-lg maps to 32rem */
+}
+
+.text-neutral-200 {
+    color: #ccc; /* Assuming text-neutral-200 maps to #ccc */
+}
+
+.col-span-1 {
+    grid-column: span 1;  
+}
+
+.md-col-span-2 {
+    grid-column: span 2;
+}
+
+.smaller-image {
+    max-width: 100%; /* Adjust the max-width for smaller images */
+    max-height: 200px; /* Set a max-height to ensure images are not too tall */
+    object-fit: contain; /* Prevents images from being stretched */
+    width: auto; /* Ensures images do not stretch */
+}
+
+/* Modal styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.9); /* Black background with opacity */
+}
+
+.modal-content {
+    margin: 5% auto; /* 5% from the top and centered */
+    display: block;
+    max-width: 80%; /* Limit the maximum width */
+    max-height: 80%; /* Limit the maximum height */
+    width: auto;
+    height: auto;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}

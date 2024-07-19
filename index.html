@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Grid Demo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="h-screen py-20 w-full bg-tricorn-black">
+        <h1 class="title font-bold md-text-5xl text-3xl">My Works</h1>
+        <div class="layout-grid">
+            <div class="card md-col-span-2" onclick="openModal('images/blossom.jpg')">
+                <img src="images/blossom.jpg" alt="Blossom Beauty Logo">
+                <div class="content">
+                    <h2 class="font-bold md-text-4xl text-xl text-white">Blossom Beauty - Logo Design</h2>
+                    <p class="font-normal text-base my-4 max-w-lg text-neutral-200">Logo design for a beauty agency made from scratch using various materials used in the business.</p>
+                </div>
+            </div>
+            <div class="card col-span-1" onclick="openModal('images/precision.jpg')">
+                <img src="images/precision.jpg" alt="Precision Tools Logo">
+                <div class="content">
+                    <h2 class="font-bold md-text-4xl text-xl text-white">Precision Tools - Logo Design</h2>
+                    <p class="font-normal text-base my-4 max-w-lg text-neutral-200">Logo for a tool store, highlighting precision and reliability.</p>
+                </div>
+            </div>
+            <div class="card col-span-1" onclick="openModal('images/fashionwacks.jpg')">
+                <img src="images/fashionwacks.jpg" alt="Fashionwacks Website Design">
+                <div class="content">
+                    <h2 class="font-bold md-text-4xl text-xl text-white">Fashionwacks - Website Design</h2>
+                    <p class="font-normal text-base my-4 max-w-lg text-neutral-200">An ecommerce website design for a brand named Fashionwacks showcasing their products, why to choose them, contact information, and social media handles.</p>
+                </div>
+            </div>
+            <div class="card md-col-span-2" onclick="openModal('images/shoe.jpg')">
+                <img src="images/shoe.jpg" alt="Shoe Store Landing Page">
+                <div class="content">
+                    <h2 class="font-bold md-text-4xl text-xl text-white">Shoe Store - Website Design</h2>
+                    <p class="font-normal text-base my-4 max-w-lg text-neutral-200">A website landing page design for a shoe store (practice).</p>
+                </div>
+            </div>
+            <div class="card col-span-1" onclick="openModal('images/chef.jpg')">
+                <img src="images/chef.jpg" alt="Chef's Delight Logo">
+                <div class="content">
+                    <h2 class="font-bold md-text-4xl text-xl text-white">Chef's Delight - Logo Design</h2>
+                    <p class="font-normal text-base my-4 max-w-lg text-neutral-200">A logo for a startup kitchen and food trucks using a chef's hat and cutleries.</p>
+                </div>
+            </div>
+            <div class="card col-span-1" onclick="openModal('images/eco.jpg')">
+                <img src="images/eco.jpg" alt="Eco-Tech Logo">
+                <div class="content">
+                    <h2 class="font-bold md-text-4xl text-xl text-white">Eco-Tech - Logo Design</h2>
+                    <p class="font-normal text-base my-4 max-w-lg text-neutral-200">Logo for a modern company that implements technology to protect the ecosystem.</p>
+                </div>
+            </div>
+            <div class="card col-span-1" onclick="openModal('images/web.jpg')">
+                <img src="images/web.jpg" alt="Web Works Logo">
+                <div class="content">
+                    <h2 class="font-bold md-text-4xl text-xl text-white">Web Works - Logo Design</h2>
+                    <p class="font-normal text-base my-4 max-w-lg text-neutral-200">A logo for a web development company made up of different materials and tools arranged in a web pattern.</p>
+                </div>
+            </div>
+            <div class="card col-span-1" onclick="openModal('images/dream.jpg')">
+                <img src="images/dream.jpg" alt="Dreamy Designs Logo">
+                <div class="content">
+                    <h2 class="font-bold md-text-4xl text-xl text-white">Dreamy Designs - Logo Design</h2>
+                    <p class="font-normal text-base my-4 max-w-lg text-neutral-200">A logo for an animation and graphics company for kids.</p>
+                </div>
+            </div>
+            <div class="card md-col-span-2" onclick="openModal('images/pd.png')">
+                <img src="images/pd.png" alt="Bobabea Product Design">
+                <div class="content">
+                    <h2 class="font-bold md-text-4xl text-xl text-white">Bobabea - Product Design</h2>
+                    <p class="font-normal text-base my-4 max-w-lg text-neutral-200">Product design for a Bobabea store to use in their social media to showcase their upcoming drink.</p>
+                </div>
+            </div>
+            <div class="card col-span-1" onclick="openModal('images/work6.jpg')">
+                <img src="images/work6.jpg" alt="Charger Tusk Graphic Design">
+                <div class="content">
+                    <h2 class="font-bold md-text-4xl text-xl text-white">Charger Tusk - Graphic Design</h2>
+                    <p class="font-normal text-base my-4 max-w-lg text-neutral-200">A graphic design poster for a Charger Tusk car highlighting the main points of it.</p>
+                </div>
+            </div>
+            <div class="card md-col-span-2" onclick="openModal('images/tech.jpg')">
+                <img src="images/tech.jpg" alt="Tech Connect Logo">
+                <div class="content">
+                    <h2 class="font-bold md-text-4xl text-xl text-white">Tech Connect - Logo Design</h2>
+                    <p class="font-normal text-base my-4 max-w-lg text-neutral-200">Logo for a company that works in the tech industry.</p>
+                </div>
+            </div>
+            <div class="card col-span-1" onclick="openModal('images/work3.jpg')">
+                <img src="images/work3.jpg" alt="Jennie Kim Graphic Design">
+                <div class="content">
+                    <h2 class="font-bold md-text-4xl text-xl text-white">Jennie Kim - Graphic Design</h2>
+                    <p class="font-normal text-base my-4 max-w-lg text-neutral-200">A graphic design poster for Jennie Kim using astonishing fonts.</p>
+                </div>
+            </div>
+            <div class="card col-span-1" onclick="openModal('images/work4.jpg')">
+                <img src="images/work4.jpg" alt="Blackpink Graphic Design">
+                <div class="content">
+                    <h2 class="font-bold md-text-4xl text-xl text-white">Blackpink - Graphic Design</h2>
+                    <p class="font-normal text-base my-4 max-w-lg text-neutral-200">A graphic design poster for Blackpink that includes members of the band who are blended in letters.</p>
+                </div>
+            </div>
+            <div class="card col-span-1" onclick="openModal('images/work5.jpg')">
+                <img src="images/work5.jpg" alt="GT3 RS Graphic Design">
+                <div class="content">
+                    <h2 class="font-bold md-text-4xl text-xl text-white">GT3 RS - Graphic Design</h2>
+                    <p class="font-normal text-base my-4 max-w-lg text-neutral-200">A graphic design poster for a GT3 RS car using different images and including a description.</p>
+                </div>
+            </div>
+            <div class="card md-col-span-1" onclick="openModal('images/1.png')">
+                <img src="images/1.png" alt="Lisa Album Poster Design">
+                <div class="content">
+                    <h2 class="font-bold md-text-4xl text-xl text-white">Lisa Album - Poster Design</h2>
+                    <p class="font-normal text-base my-4 max-w-lg text-neutral-200">A poster design of Lisa's new album.</p>
+                </div>
+            </div>
+            <div class="card md-col-span-1" onclick="openModal('images/3.png')">
+                <img src="images/3.png" alt="Lana Del Rey Poster Design">
+                <div class="content">
+                    <h2 class="font-bold md-text-4xl text-xl text-white">Lana Del Rey - Poster Design</h2>
+                    <p class="font-normal text-base my-4 max-w-lg text-neutral-200">Lana Del Rey poster design with Starboy theme replicated.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- The Modal -->
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImg">
+    </div>
+
+    <script>
+        function openModal(src) {
+            document.getElementById("imageModal").style.display = "block";
+            document.getElementById("modalImg").src = src;
+        }
+
+        function closeModal() {
+            document.getElementById("imageModal").style.display = "none";
+        }
+
+        window.addEventListener('load', function() {
+            const cards = document.querySelectorAll('.card');
+            cards.forEach(card => {
+                const img = card.querySelector('img');
+                if (img) {
+                    img.onload = function() {
+                        card.style.height = img.height + 'px';
+                    };
+                }
+            });
+        });
+    </script>
+</body>
+</html>
